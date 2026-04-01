@@ -12,6 +12,7 @@ export class AuthService {
   constructor(private readonly prisma: PrismaService) {}
 
   async upsertGoogleUser(profile: Profile, ip?: string) {
+    console.log('[AuthService] Attempting to upsert user for Google ID:', profile.id);
     const googleId = profile.id;
 
     const primaryEmail = profile.emails?.[0]?.value ?? null;
