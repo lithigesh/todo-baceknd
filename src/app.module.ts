@@ -7,8 +7,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { TodosModule } from './todos/todos.module';
-import { AuthService } from './auth/auth.service';
-import { TodosService } from './todos/todos.service';
+
 
 
 @Module({
@@ -33,8 +32,6 @@ import { TodosService } from './todos/todos.service';
       provide: APP_GUARD,
       useClass: ThrottlerGuard,
     },
-    AuthService,
-    TodosService,
   ],
 })
 export class AppModule {}
