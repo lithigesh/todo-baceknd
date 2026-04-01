@@ -35,7 +35,7 @@ export class AuthController {
     description: 'Redirect to frontend after successful login',
   })
   async googleCallback(@Req() req: Request, @Res() res: Response) {
-    const redirectTo = process.env.AUTH_SUCCESS_REDIRECT ?? '/';
+    const redirectTo = process.env.AUTH_SUCCESS_REDIRECT ?? '/auth/me';
 
     // Ensure the session (and cookie) is saved before redirecting.
     if (req.session) {
