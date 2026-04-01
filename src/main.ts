@@ -52,6 +52,7 @@ async function bootstrap() {
     throw new Error('SESSION_SECRET is required in production');
   }
 
+  app.set('trust proxy', 1);
   app.use(
     session({
       secret: sessionSecret ?? 'dev_session_secret',
@@ -60,7 +61,7 @@ async function bootstrap() {
       cookie: {
         httpOnly: true,
         sameSite: 'lax',
-        secure: false,
+        secure: true,
       },
     }),
   );
