@@ -1,0 +1,11 @@
+node_modules
+dist
+coverage
+npm-debug.log
+.env
+Dockerfile
+docker-compose.yml
+.git
+.gitignore
+README.md
+prisma/migrations

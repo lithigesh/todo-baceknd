@@ -1,0 +1,12 @@
+import { AppService } from './app.service';
+export declare class AppController {
+    private readonly appService;
+    constructor(appService: AppService);
+    root(): {
+        status: string;
+        message: string;
+    };
+    health(): {
+        status: string;
+    };
+}
