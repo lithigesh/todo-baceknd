@@ -7,8 +7,8 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { TodosModule } from './todos/todos.module';
-import { AuthService } from './test/auth/auth/auth.service';
-import { TodosService } from './test/todos/todos/todos.service';
+import { AuthService } from './auth/auth.service';
+import { TodosService } from './todos/todos.service';
 
 
 @Module({
