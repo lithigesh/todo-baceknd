@@ -17,7 +17,7 @@ import { TodosService } from './test/todos/todos/todos.service';
       throttlers: [
         {
           ttl: 1800000,
-          limit: 10,
+          limit: 1000,
         },
       ],
       storage: new ThrottlerStorageRedisService(process.env.REDIS_URL || 'redis://localhost:6379'),
