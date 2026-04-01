@@ -12,7 +12,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
     const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
     const callbackURL =
       process.env.GOOGLE_CALLBACK_URL ??
-      'http://localhost:3000/auth/google/callback';
+      'https://todo-baceknd.onrender.com/auth/google/callback';
 
     if (!clientID || !clientSecret) {
       throw new Error(

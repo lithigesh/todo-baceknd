@@ -29,12 +29,12 @@
 
 This project includes a very small Todo backend.
 
-- Base URL: `http://localhost:3000`
+- Base URL: `https://todo-baceknd.onrender.com`
 - Data is stored in Postgres using Prisma.
 
 ### Simple UI
 
-- Open `http://localhost:3000/ui/`
+- Open `https://todo-baceknd.onrender.com/ui/`
 
 ### Endpoints
 
@@ -47,17 +47,17 @@ This project includes a very small Todo backend.
 ### Quick try (curl)
 
 ```bash
-curl -s http://localhost:3000/todos
+curl -s https://todo-baceknd.onrender.com/todos
 
-curl -s -X POST http://localhost:3000/todos \
+curl -s -X POST https://todo-baceknd.onrender.com/todos \
   -H "Content-Type: application/json" \
   -d "{\"title\":\"Buy milk\"}"
 
-curl -s -X PATCH http://localhost:3000/todos/1 \
+curl -s -X PATCH https://todo-baceknd.onrender.com/todos/1 \
   -H "Content-Type: application/json" \
   -d "{\"completed\":true}"
 
-curl -i -X DELETE http://localhost:3000/todos/1
+curl -i -X DELETE https://todo-baceknd.onrender.com/todos/1
 ```
 
 ## Project setup
@@ -92,8 +92,8 @@ This project supports Google login via cookie sessions.
 3) Create Credentials → **OAuth client ID** → **Web application**
 4) Add these values:
 
-- **Authorized JavaScript origins**: `http://localhost:3000`
-- **Authorized redirect URIs**: `http://localhost:3000/auth/google/callback`
+- **Authorized JavaScript origins**: `https://todo-baceknd.onrender.com`
+- **Authorized redirect URIs**: `https://todo-baceknd.onrender.com/auth/google/callback`
 
 ### 2) Configure environment variables
 
@@ -107,8 +107,8 @@ This project supports Google login via cookie sessions.
 ### 3) Try it
 
 - Start: `npm run start`
-- Visit: `http://localhost:3000/auth/google`
-- Check: `GET http://localhost:3000/auth/me`
+- Visit: `https://todo-baceknd.onrender.com/auth/google`
+- Check: `GET https://todo-baceknd.onrender.com/auth/me`
 
 ## Compile and run the project
 
